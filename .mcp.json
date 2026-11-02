@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "firmlookup": {
+      "url": "https://firm.bestsmartgoods.com/mcp"
+    },
+    "billparse": {
+      "url": "https://bill.bestsmartgoods.com/mcp"
+    },
+    "citecheck": {
+      "url": "https://cite.bestsmartgoods.com/mcp"
+    }
+  }
+}
