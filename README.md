@@ -39,6 +39,8 @@ curl -X POST https://bill.bestsmartgoods.com/v1/invoices/parse \
 
 ## Citation check
 
+[![mcptry](https://mcptry.com/badge/io.github.ladanyin/citation-check)](https://mcptry.com/servers/io.github.ladanyin/citation-check)
+
 Check whether a URL supports a claim. 0.08 credit per successful call.
 
 MCP: `https://cite.bestsmartgoods.com/mcp` · tool `check_citation`
