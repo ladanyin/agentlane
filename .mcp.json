@@ -8,6 +8,15 @@
     },
     "citecheck": {
       "url": "https://cite.bestsmartgoods.com/mcp"
+    },
+    "phpdocs": {
+      "url": "https://php.bestsmartgoods.com/mcp"
+    },
+    "depcheck": {
+      "url": "https://deps.bestsmartgoods.com/mcp"
+    },
+    "speclookup": {
+      "url": "https://spec.bestsmartgoods.com/mcp"
     }
   }
 }
