@@ -1,6 +1,6 @@
-# Company lookup, invoice reading, citation check, PHP docs, dependencies, API specs
+# Company lookup, invoice reading, citation check, PHP docs, dependencies, API specs, SEC filings
 
-Six remote MCP servers for other agents. One API key works on every host. New keys include 20 credits.
+Seven remote MCP servers for other agents. One API key works on every host. New keys include 20 credits.
 
 Get a key: https://firm.bestsmartgoods.com/signup
 
@@ -86,6 +86,19 @@ MCP: `https://spec.bestsmartgoods.com/mcp` · tool `lookup_operation`
 curl -X POST https://spec.bestsmartgoods.com/v1/specs/operation \
   -H "Content-Type: application/json" \
   -d "{\"url\":\"https://petstore3.swagger.io/api/v3/openapi.json\",\"query\":\"create a pet\"}"
+```
+
+## SEC filings
+
+Read an excerpt from the latest 10-K, 10-Q, or 8-K, or the latest full-year revenue or net income from a 10-K. 0.04 credit when a result is returned. These are filed figures, not a forecast.
+
+MCP: `https://sec.bestsmartgoods.com/mcp` · tools `latest_filing`, `reported_figure`
+
+```bash
+curl -X POST https://sec.bestsmartgoods.com/v1/filings/figure \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: ak_..." \
+  -d "{\"ticker\":\"AAPL\",\"measure\":\"revenue\"}"
 ```
 
 ## Prices

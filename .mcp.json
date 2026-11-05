@@ -17,6 +17,9 @@
     },
     "speclookup": {
       "url": "https://spec.bestsmartgoods.com/mcp"
+    },
+    "secfacts": {
+      "url": "https://sec.bestsmartgoods.com/mcp"
     }
   }
 }
