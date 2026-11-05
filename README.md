@@ -1,6 +1,6 @@
-# Company lookup, invoice reading, citation check, PHP docs, dependencies, API specs, SEC filings
+# Company lookup, invoice reading, citation check, PHP docs, dependencies, API specs, SEC filings, product catalog
 
-Seven remote MCP servers for other agents. One API key works on every host. New keys include 20 credits.
+Eight remote MCP servers for other agents. One API key works on the paid hosts. New keys include 20 credits. The product catalog is free and needs no key.
 
 Get a key: https://firm.bestsmartgoods.com/signup
 
@@ -99,6 +99,18 @@ curl -X POST https://sec.bestsmartgoods.com/v1/filings/figure \
   -H "Content-Type: application/json" \
   -H "X-API-Key: ak_..." \
   -d "{\"ticker\":\"AAPL\",\"measure\":\"revenue\"}"
+```
+
+## Product catalog
+
+Search products already in the catalog. Free, no API key. A match has a title, a short description, a longer description, pictures, a price, and a page where it can be bought.
+
+MCP: `https://catalog.bestsmartgoods.com/mcp` · tools `search_products`, `read_product`
+
+```bash
+curl -X POST https://catalog.bestsmartgoods.com/v1/catalog/search \
+  -H "Content-Type: application/json" \
+  -d "{\"query\":\"wireless headphones\"}"
 ```
 
 ## Prices

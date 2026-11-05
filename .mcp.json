@@ -20,6 +20,9 @@
     },
     "secfacts": {
       "url": "https://sec.bestsmartgoods.com/mcp"
+    },
+    "productcatalog": {
+      "url": "https://catalog.bestsmartgoods.com/mcp"
     }
   }
 }
